@@ -1,0 +1,90 @@
+@import "VARIAVEIS_GLOBAIS.less";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background: @corBackground;
+    
+}
+.header{
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: #181920;
+    border-bottom: 3px solid #0f0;
+}
+
+/*   ICONES   */
+.pai{
+    padding-right: 10px;
+}
+.fa-home{
+    color: #ff5a5a;
+}
+.fa-tools{
+    color: #0abde3;
+}
+
+/*   LINKS   */
+
+.homeP{
+    right: 230px;
+}
+.settingsP{
+    right: 20px;
+}
+
+/*   HOVERS   */
+
+.homeP:hover{
+    padding: @paddingHovers;
+    cursor: pointer;
+    background-color: @corBackground;
+    transform: scale(1.1);
+}
+.settingsP:hover{
+    padding: @paddingHovers;
+    cursor: pointer;
+    background-color: @corBackground;
+    transform: scale(1.1);
+}
+
+/*   IDs   */
+
+#Pai{
+    color: #eee;
+    border-radius: 4px;
+    transition: 0.25s linear;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 25px;
+    padding: 12px 20px;
+    position: absolute;
+}
+
+/*   TEXTOS   */
+
+.text{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text::after{
+    content: '';
+    width: 80%;
+    height: 4px;
+    background: currentColor;
+    display: block;
+    text-align: center;
+    margin: 3px auto;
+}
